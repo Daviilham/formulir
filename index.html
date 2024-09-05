@@ -1,77 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Person</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .form-container {
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            width: 300px;
-            background-color: #f9f9f9;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .form-container {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 300px;
+        background-color: #f9f9f9;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        background-color: #3027af;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="form-container">
-        <h2>Contact Person Form</h2>
-        <form action="submit.php" method="post">
+      <h2>Contact Person Form</h2>
+      <form action="submit.php" method="post">
+        <label for="nama">Nama:</label><br />
+        <input type="text" id="nama" name="nama" required /><br />
 
-            <label for="nama">Nama:</label><br>
-            <input type="text" id="nama" name="nama" required><br>
-            
-            <label for="nim">NIM:</label><br>
-            <input type="text" id="nim" name="nim" required><br>
-            
-            <label for="kelas">Kelas:</label><br>
-            <input type="text" id="kelas" name="kelas" required><br>
-            
-            <label for="gender">Gender:</label><br>
-            <input type="radio" id="laki-laki" name="gender" value="Laki-laki" required>
-            <label for="laki-laki">Laki-laki</label>
-            <input type="radio" id="perempuan" name="gender" value="Perempuan" required>
-            <label for="perempuan">Perempuan</label><br><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            
-            <label for="saran">Saran:</label><br>
-            <textarea id="saran" name="saran" rows="4" placeholder="Masukkan saran anda di sini..." required></textarea><br>
-            
-            <input type="submit" value="Kirim">
-        </form>
+        <label for="nim">NIM:</label><br />
+        <input type="text" id="nim" name="nim" required /><br />
+
+        <label for="kelas">Kelas:</label><br />
+        <input type="text" id="kelas" name="kelas" required /><br />
+
+        <label for="gender">Gender:</label><br />
+        <input
+          type="radio"
+          id="laki-laki"
+          name="gender"
+          value="Laki-laki"
+          required
+        />
+        <label for="laki-laki">Laki-laki</label>
+        <input
+          type="radio"
+          id="perempuan"
+          name="gender"
+          value="Perempuan"
+          required
+        />
+        <label for="perempuan">Perempuan</label><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="saran">Saran:</label><br />
+        <textarea
+          id="saran"
+          name="saran"
+          rows="4"
+          placeholder="Masukkan saran anda di sini..."
+          required
+        ></textarea
+        ><br />
+
+        <input type="submit" value="Kirim" />
+      </form>
     </div>
-</body>
+  </body>
 </html>
